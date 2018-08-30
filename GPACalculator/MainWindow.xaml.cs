@@ -73,6 +73,42 @@ namespace GPACalculator
                 };
                 Courses.Add(course);
             }
+            if (Class2Name != null)
+            {
+                Course course = new Course()
+                {
+                    Name = Class2Name.Text,
+                    Grade = Class2Grade.Text,
+                    GPAGrade = GradeToGPA(Class2Grade.Text),
+                    Credits = int.Parse(Class2Credits.Text)
+
+                };
+                Courses.Add(course);
+            }
+            if (Class3Name != null)
+            {
+                Course course = new Course()
+                {
+                    Name = Class3Name.Text,
+                    Grade = Class3Grade.Text,
+                    GPAGrade = GradeToGPA(Class3Grade.Text),
+                    Credits = int.Parse(Class3Credits.Text)
+
+                };
+                Courses.Add(course);
+            }
+            if (Class4Name != null)
+            {
+                Course course = new Course()
+                {
+                    Name = Class4Name.Text,
+                    Grade = Class4Grade.Text,
+                    GPAGrade = GradeToGPA(Class4Grade.Text),
+                    Credits = int.Parse(Class4Credits.Text)
+
+                };
+                Courses.Add(course);
+            }
 
         }
     }
