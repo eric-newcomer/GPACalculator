@@ -22,13 +22,15 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
+        <Label x:Name="Title" Content="College GPA Calculator"  VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="5"/>
+
         <TextBox x:Name="Class1Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="1" FontSize="20" Text="{Binding Name}"/>
         <TextBox x:Name="Class2Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="2" FontSize="20"/>
         <TextBox x:Name="Class3Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="3" FontSize="20"/>
         <TextBox x:Name="Class4Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="4" FontSize="20"/>
 
-        <Label Content="Grade:" Grid.Column="1" Grid.Row="1"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Grade:" Grid.Column="1" Grid.Row="1"  Margin="43.333,0,43.333,15" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" FontWeight="Bold"/>
         <Label Content="Grade:" Grid.Column="1" Grid.Row="2"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Content="Grade:" Grid.Column="1" Grid.Row="3"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Content="Grade:" Grid.Column="1" Grid.Row="4"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
@@ -96,6 +98,7 @@
         <TextBox x:Name="Class3Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="3" FontSize="20"/>
         <TextBox x:Name="Class4Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="4" FontSize="20"/>
 
-        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.Column="2" Grid.Row="5" FontSize="20" FontWeight="Bold" Margin="2 2 2 2" Click="CalculateGPA_Click"/>
+        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="5" FontSize="20" FontWeight="Bold" Margin="5 5 100 10" Click="CalculateGPA_Click"/>
+        <Label x:Name="YourGPA" Content="Your GPA:" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="5" Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
     </Grid>
 </Window>
