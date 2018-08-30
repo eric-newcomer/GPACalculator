@@ -95,5 +95,7 @@
         <TextBox x:Name="Class2Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="2" FontSize="20"/>
         <TextBox x:Name="Class3Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="3" FontSize="20"/>
         <TextBox x:Name="Class4Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="4" FontSize="20"/>
+
+        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.Column="2" Grid.Row="5" FontSize="20" FontWeight="Bold" Margin="2 2 2 2" Click="CalculateGPA_Click"/>
     </Grid>
 </Window>
