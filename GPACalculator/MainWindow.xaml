@@ -22,7 +22,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="Class1Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="1" />
+        <TextBox x:Name="Class1Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="1"/>
         <TextBox x:Name="Class2Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="2"/>
         <TextBox x:Name="Class3Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="3"/>
         <TextBox x:Name="Class4Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="4"/>
@@ -32,5 +32,67 @@
         <Label Content="Grade:" Grid.Column="1" Grid.Row="3"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Content="Grade:" Grid.Column="1" Grid.Row="4"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
 
+        <ComboBox Grid.Column="2" Grid.Row="1" Margin="5 15 5 15">
+            <ComboBoxItem Content = "A"/>
+            <ComboBoxItem Content = "A-"/>
+            <ComboBoxItem Content = "B+"/>
+            <ComboBoxItem Content = "B"/>
+            <ComboBoxItem Content = "B-"/>
+            <ComboBoxItem Content = "C+"/>
+            <ComboBoxItem Content = "C"/>
+            <ComboBoxItem Content = "C-"/>
+            <ComboBoxItem Content = "D+"/>
+            <ComboBoxItem Content = "D"/>
+            <ComboBoxItem Content = "F"/>
+        </ComboBox>
+        <ComboBox Grid.Column="2" Grid.Row="2" Margin="5 15 5 15">
+        <ComboBoxItem Content = "A"/>
+        <ComboBoxItem Content = "A-"/>
+        <ComboBoxItem Content = "B+"/>
+        <ComboBoxItem Content = "B"/>
+        <ComboBoxItem Content = "B-"/>
+        <ComboBoxItem Content = "C+"/>
+        <ComboBoxItem Content = "C"/>
+        <ComboBoxItem Content = "C-"/>
+        <ComboBoxItem Content = "D+"/>
+        <ComboBoxItem Content = "D"/>
+        <ComboBoxItem Content = "F"/>
+        </ComboBox>
+        <ComboBox Grid.Column="2" Grid.Row="3" Margin="5 15 5 15">
+        <ComboBoxItem Content = "A"/>
+        <ComboBoxItem Content = "A-"/>
+        <ComboBoxItem Content = "B+"/>
+        <ComboBoxItem Content = "B"/>
+        <ComboBoxItem Content = "B-"/>
+        <ComboBoxItem Content = "C+"/>
+        <ComboBoxItem Content = "C"/>
+        <ComboBoxItem Content = "C-"/>
+        <ComboBoxItem Content = "D+"/>
+        <ComboBoxItem Content = "D"/>
+        <ComboBoxItem Content = "F"/>
+        </ComboBox>
+        <ComboBox Grid.Column="2" Grid.Row="4" Margin="5 15 5 15">
+        <ComboBoxItem Content = "A"/>
+        <ComboBoxItem Content = "A-"/>
+        <ComboBoxItem Content = "B+"/>
+        <ComboBoxItem Content = "B"/>
+        <ComboBoxItem Content = "B-"/>
+        <ComboBoxItem Content = "C+"/>
+        <ComboBoxItem Content = "C"/>
+        <ComboBoxItem Content = "C-"/>
+        <ComboBoxItem Content = "D+"/>
+        <ComboBoxItem Content = "D"/>
+        <ComboBoxItem Content = "F"/>
+        </ComboBox>
+
+        <Label Content="Credits:" Grid.Column="3" Grid.Row="1"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Credits:" Grid.Column="3" Grid.Row="2"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Credits:" Grid.Column="3" Grid.Row="3"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Credits:" Grid.Column="3" Grid.Row="4"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+
+        <TextBox x:Name="Class1Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="1"/>
+        <TextBox x:Name="Class2Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="2"/>
+        <TextBox x:Name="Class3Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="3"/>
+        <TextBox x:Name="Class4Credits" Margin="5 15 10 15" Grid.Column="4" Grid.Row="4"/>
     </Grid>
 </Window>
