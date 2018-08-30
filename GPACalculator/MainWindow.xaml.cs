@@ -24,5 +24,4 @@ namespace GPACalculator
         {
             InitializeComponent();
         }
-    }
 }
