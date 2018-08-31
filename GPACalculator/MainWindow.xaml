@@ -14,7 +14,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -24,16 +24,16 @@
 
         <Label x:Name="Title" Content="College GPA Calculator"  VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="5"/>
 
-        <Label Content="Course Name" Grid.Row="1" Grid.Column="0" Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Course Name" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"/>
 
-        <TextBox x:Name="Class1Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="2" FontSize="20"/>
-        <TextBox x:Name="Class2Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="3" FontSize="20"/>
-        <TextBox x:Name="Class3Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="4" FontSize="20"/>
-        <TextBox x:Name="Class4Name" Margin="10 15 5 15" Grid.Column="0" Grid.Row="5" FontSize="20"/>
+        <TextBox x:Name="Class1Name" Margin="15 20 10 20" Grid.Column="0" Grid.Row="2" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class2Name" Margin="15 20 10 20" Grid.Column="0" Grid.Row="3" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class3Name" Margin="15 20 10 20" Grid.Column="0" Grid.Row="4" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class4Name" Margin="15 20 10 20" Grid.Column="0" Grid.Row="5" FontSize="20" VerticalAlignment="Center"/>
 
-        <Label Content="Grade:" Grid.Column="1" Grid.Row="1"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
-        
-        <ComboBox x:Name="Class1Grade"  Grid.Column="1" Grid.Row="2" Margin="5 15 5 15" FontSize="20">
+        <Label Content="Grade" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"/>
+
+        <ComboBox x:Name="Class1Grade"  Grid.Column="1" Grid.Row="2" Margin="10 20 10 20" FontSize="20" VerticalAlignment="Center">
             <ComboBoxItem Content = "A" FontSize="20"/>
             <ComboBoxItem Content = "A-" FontSize="20"/>
             <ComboBoxItem Content = "B+" FontSize="20"/>
@@ -46,7 +46,7 @@
             <ComboBoxItem Content = "D" FontSize="20"/>
             <ComboBoxItem Content = "F" FontSize="20"/>
         </ComboBox>
-        <ComboBox x:Name="Class2Grade" Grid.Column="1" Grid.Row="3" Margin="5 15 5 15" FontSize="20">
+        <ComboBox x:Name="Class2Grade" Grid.Column="1" Grid.Row="3" Margin="10 20 10 20" FontSize="20" VerticalAlignment="Center">
             <ComboBoxItem Content = "A" FontSize="20"/>
             <ComboBoxItem Content = "A-" FontSize="20"/>
             <ComboBoxItem Content = "B+" FontSize="20"/>
@@ -59,7 +59,7 @@
             <ComboBoxItem Content = "D" FontSize="20"/>
             <ComboBoxItem Content = "F" FontSize="20"/>
         </ComboBox>
-        <ComboBox x:Name="Class3Grade" Grid.Column="1" Grid.Row="4" Margin="5 15 5 15" FontSize="20">
+        <ComboBox x:Name="Class3Grade" Grid.Column="1" Grid.Row="4" Margin="10 20 10 20" FontSize="20" VerticalAlignment="Center">
             <ComboBoxItem Content = "A" FontSize="20"/>
             <ComboBoxItem Content = "A-" FontSize="20"/>
             <ComboBoxItem Content = "B+" FontSize="20"/>
@@ -72,7 +72,7 @@
             <ComboBoxItem Content = "D" FontSize="20"/>
             <ComboBoxItem Content = "F" FontSize="20"/>
         </ComboBox>
-        <ComboBox x:Name="Class4Grade" Grid.Column="1" Grid.Row="5" Margin="5 15 5 15" FontSize="20">
+        <ComboBox x:Name="Class4Grade" Grid.Column="1" Grid.Row="5" Margin="10 20 10 20" FontSize="20" VerticalAlignment="Center">
             <ComboBoxItem Content = "A" FontSize="20"/>
             <ComboBoxItem Content = "A-" FontSize="20"/>
             <ComboBoxItem Content = "B+" FontSize="20"/>
@@ -86,15 +86,16 @@
             <ComboBoxItem Content = "F" FontSize="20"/>
         </ComboBox>
 
-        <Label Content="Credits:" Grid.Column="2" Grid.Row="1"  Margin="5 15 5 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
-        
-        <TextBox x:Name="Class1Credits" Margin="5 15 10 15" Grid.Column="2" Grid.Row="2" FontSize="20"/>
-        <TextBox x:Name="Class2Credits" Margin="5 15 10 15" Grid.Column="2" Grid.Row="3" FontSize="20"/>
-        <TextBox x:Name="Class3Credits" Margin="5 15 10 15" Grid.Column="2" Grid.Row="4" FontSize="20"/>
-        <TextBox x:Name="Class4Credits" Margin="5 15 10 15" Grid.Column="2" Grid.Row="5" FontSize="20"/>
+        <Label Content="Credits" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"/>
 
-        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" FontSize="20" FontWeight="Bold" Margin="50 5 150 10" Click="CalculateGPA_Click"/>
-        <Label x:Name="YourGPA" Content="Your GPA:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="6" Margin="5 15 100 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
-        
+        <TextBox x:Name="Class1Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="2" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class2Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="3" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class3Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="4" FontSize="20" VerticalAlignment="Center"/>
+        <TextBox x:Name="Class4Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="5" FontSize="20" VerticalAlignment="Center"/>
+
+        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" FontSize="20" FontWeight="Bold" Margin="50 10 150 10" Click="CalculateGPA_Click"/>
+        <Label x:Name="YourGPA" Content="Your GPA:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="6" Margin="5 15 140 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="FinalGPA" Grid.Column="2" Grid.Row="6" Margin="20 20 20 20" />
+
     </Grid>
 </Window>
