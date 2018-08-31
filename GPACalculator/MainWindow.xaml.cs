@@ -24,6 +24,7 @@ namespace GPACalculator
         public MainWindow()
         {
             InitializeComponent();
+            
         }
         public class Course
         {
@@ -109,6 +110,18 @@ namespace GPACalculator
                 };
                 Courses.Add(course);
             }
+            double TotalGPA = 0;
+            int count = 0;
+            double FinalGPA;
+            foreach (var c in Courses)
+            {
+                TotalGPA += c.GPAGrade;
+                count += 1;
+
+            }
+
+            FinalGPA = TotalGPA / count;
+
 
         }
     }
