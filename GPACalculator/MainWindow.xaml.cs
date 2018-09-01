@@ -36,7 +36,7 @@ namespace GPACalculator
             {
                 if (Class1Grade.SelectedItem != null)
                 {
-                    SumGPA += GradeToGPA(Class1Grade.SelectedItem);
+                    SumGPA += GradeToGPA(Class1Grade.SelectedItem.ToString());
                 }
             }
             if (Class2Name.Text != null)
@@ -51,6 +51,23 @@ namespace GPACalculator
             {
                 
             }           
+        }
+        private double GradeToGPA(string grade)
+        {
+            Dictionary<string, string> dict = new Dictionary<string, string>()
+            {
+                {"A", "4.0"},
+                {"A-", "3.7"},
+                {"B+", "3.3" },
+                {"B", "3.0" },
+                {"B-", "2.7" },
+                {"C+", "2.3" },
+                {"C", "2.0" },
+                {"C-", "1.7" },
+                {"D+", "1.3" },
+                {"D", "1.0" },
+                {"F", "0.0" },
+            };
         }
     }
 }
