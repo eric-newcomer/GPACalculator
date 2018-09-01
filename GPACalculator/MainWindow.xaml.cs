@@ -28,31 +28,64 @@ namespace GPACalculator
 
         private void CalculateGPA_Click(object sender, RoutedEventArgs e)
         {
-            double FinalGPA;
-            double SumGPA = 0.0;
+            double myFinalGPA;
+            double Sum = 0.0;
             int count = 0;
 
             if (Class1Name.Text != null)
             {
                 if (Class1Grade.SelectedItem != null)
                 {
-                    SumGPA += GradeToGPA(Class1Grade.SelectedItem.ToString());
+                    string gpa = GradeToGPA(Class1Grade.SelectedItem.ToString());
+                    double gpaAsDouble = Convert.ToDouble(gpa);
+                    double credits1 = Convert.ToDouble(Class1Credits.Text);
+                    double FinalGPA1 = (gpaAsDouble * credits1) / credits1;
+                    Sum += FinalGPA1;
+                    count += 1;
                 }
             }
             if (Class2Name.Text != null)
             {
-                
+                if (Class2Grade.SelectedItem != null)
+                {
+                    string gpa2 = GradeToGPA(Class2Grade.SelectedItem.ToString());
+                    double gpa2AsDouble = Convert.ToDouble(gpa2);
+                    double credits2 = Convert.ToDouble(Class2Credits.Text);
+                    double FinalGPA2 = (gpa2AsDouble * credits2) / credits2;
+                    Sum += FinalGPA2;
+                    count += 1;
+                }
+
             }
             if (Class3Name.Text != null)
             {
-                
+                if (Class3Grade.SelectedItem != null)
+                {
+                    string gpa3 = GradeToGPA(Class3Grade.SelectedItem.ToString());
+                    double gpa3AsDouble = Convert.ToDouble(gpa3);
+                    double credits3 = Convert.ToDouble(Class3Credits.Text);
+                    double FinalGPA3 = (gpa3AsDouble * credits3) / credits3;
+                    Sum += FinalGPA3;
+                    count += 1;
+                }
+
             }
             if (Class4Name.Text != null)
             {
-                
-            }           
+                if (Class4Grade.SelectedItem != null)
+                {
+                    string gpa4 = GradeToGPA(Class4Grade.SelectedItem.ToString());
+                    double gpa4AsDouble = Convert.ToDouble(gpa4);
+                    double credits4 = Convert.ToDouble(Class4Credits.Text);
+                    double FinalGPA4 = (gpa4AsDouble * credits4) / credits4;
+                    Sum += FinalGPA4;
+                    count += 1;
+                }
+            }
+            myFinalGPA = Sum / count;
+            FinalGPA.Text = myFinalGPA.ToString();
         }
-        private double GradeToGPA(string grade)
+        private string GradeToGPA(string grade)
         {
             Dictionary<string, string> dict = new Dictionary<string, string>()
             {
@@ -68,6 +101,7 @@ namespace GPACalculator
                 {"D", "1.0" },
                 {"F", "0.0" },
             };
+            return dict[grade];
         }
     }
 }
