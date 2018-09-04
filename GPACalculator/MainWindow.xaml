@@ -18,7 +18,7 @@
         <Grid.Background>
             <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
                 <GradientStop Color="#B38F4F" Offset="0"/>
-                <GradientStop Color="#003831" Offset="0.75"/>
+                <GradientStop Color="#ffffff" Offset="0.8"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>

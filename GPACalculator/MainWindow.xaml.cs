@@ -103,5 +103,9 @@ namespace GPACalculator
             };
             return dict[grade];
         }
+        private void ClearAll_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
