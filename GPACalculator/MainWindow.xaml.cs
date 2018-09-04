@@ -32,7 +32,7 @@ namespace GPACalculator
             double Sum = 0.0;
             int count = 0;
 
-            if (String.IsNullOrEmpty(Class1Name.Text))
+            if (!String.IsNullOrEmpty(Class1Name.Text))
             {
                 if (Class1Grade.SelectedItem != null)
                 {
@@ -44,7 +44,7 @@ namespace GPACalculator
                     count += 1;
                 }
             }
-            if (String.IsNullOrEmpty(Class2Name.Text))
+            if (!String.IsNullOrEmpty(Class2Name.Text))
             {
                 if (Class2Grade.SelectedItem != null)
                 {
@@ -57,7 +57,7 @@ namespace GPACalculator
                 }
 
             }
-            if (String.IsNullOrEmpty(Class3Name.Text))
+            if (!String.IsNullOrEmpty(Class3Name.Text))
             {
                 if (Class3Grade.SelectedItem != null)
                 {
@@ -70,7 +70,7 @@ namespace GPACalculator
                 }
 
             }
-            if (String.IsNullOrEmpty(Class4Name.Text))
+            if (!String.IsNullOrEmpty(Class4Name.Text))
             {
                 if (Class4Grade.SelectedItem != null)
                 {
