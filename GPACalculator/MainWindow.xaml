@@ -13,12 +13,12 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="GPA Calculator" Height="600" Width="650">
+        Title="GPA Calculator" Height="600" Width="650" Icon="favicon.ico">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
                 <GradientStop Color="#B38F4F" Offset="0"/>
-                <GradientStop Color="#003831" Offset="0.6"/>
+                <GradientStop Color="#003831" Offset="0.5"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
