@@ -32,11 +32,11 @@ namespace GPACalculator
             double Sum = 0.0;
             int count = 0;
 
-            if (Class1Name.Text != null)
+            if (String.IsNullOrEmpty(Class1Name.Text))
             {
                 if (Class1Grade.SelectedItem != null)
                 {
-                    string gpa = GradeToGPA(Class1Grade.SelectedItem.ToString());
+                    string gpa = GradeToGPA(Class1Grade.Text);
                     double gpaAsDouble = Convert.ToDouble(gpa);
                     double credits1 = Convert.ToDouble(Class1Credits.Text);
                     double FinalGPA1 = (gpaAsDouble * credits1) / credits1;
@@ -44,7 +44,7 @@ namespace GPACalculator
                     count += 1;
                 }
             }
-            if (Class2Name.Text != null)
+            if (String.IsNullOrEmpty(Class2Name.Text))
             {
                 if (Class2Grade.SelectedItem != null)
                 {
@@ -57,7 +57,7 @@ namespace GPACalculator
                 }
 
             }
-            if (Class3Name.Text != null)
+            if (String.IsNullOrEmpty(Class3Name.Text))
             {
                 if (Class3Grade.SelectedItem != null)
                 {
@@ -70,7 +70,7 @@ namespace GPACalculator
                 }
 
             }
-            if (Class4Name.Text != null)
+            if (String.IsNullOrEmpty(Class4Name.Text))
             {
                 if (Class4Grade.SelectedItem != null)
                 {
