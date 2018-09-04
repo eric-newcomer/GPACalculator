@@ -48,7 +48,7 @@ namespace GPACalculator
             {
                 if (Class2Grade.SelectedItem != null)
                 {
-                    string gpa2 = GradeToGPA(Class2Grade.SelectedItem.ToString());
+                    string gpa2 = GradeToGPA(Class2Grade.Text);
                     double gpa2AsDouble = Convert.ToDouble(gpa2);
                     double credits2 = Convert.ToDouble(Class2Credits.Text);
                     double FinalGPA2 = (gpa2AsDouble * credits2) / credits2;
@@ -61,7 +61,7 @@ namespace GPACalculator
             {
                 if (Class3Grade.SelectedItem != null)
                 {
-                    string gpa3 = GradeToGPA(Class3Grade.SelectedItem.ToString());
+                    string gpa3 = GradeToGPA(Class3Grade.Text);
                     double gpa3AsDouble = Convert.ToDouble(gpa3);
                     double credits3 = Convert.ToDouble(Class3Credits.Text);
                     double FinalGPA3 = (gpa3AsDouble * credits3) / credits3;
@@ -74,7 +74,7 @@ namespace GPACalculator
             {
                 if (Class4Grade.SelectedItem != null)
                 {
-                    string gpa4 = GradeToGPA(Class4Grade.SelectedItem.ToString());
+                    string gpa4 = GradeToGPA(Class4Grade.Text);
                     double gpa4AsDouble = Convert.ToDouble(gpa4);
                     double credits4 = Convert.ToDouble(Class4Credits.Text);
                     double FinalGPA4 = (gpa4AsDouble * credits4) / credits4;
