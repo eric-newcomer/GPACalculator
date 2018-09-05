@@ -105,7 +105,22 @@ namespace GPACalculator
         }
         private void ClearAll_Click(object sender, RoutedEventArgs e)
         {
+            Class1Name.Clear();
+            Class2Name.Clear();
+            Class3Name.Clear();
+            Class4Name.Clear();
 
+            Class1Grade.Items.Clear();
+            Class2Grade.Items.Clear();
+            Class3Grade.Items.Clear();
+            Class4Grade.Items.Clear();
+
+            Class1Credits.Clear();
+            Class2Credits.Clear();
+            Class3Credits.Clear();
+            Class4Credits.Clear();
+
+            FinalGPA.Clear();
         }
     }
 }

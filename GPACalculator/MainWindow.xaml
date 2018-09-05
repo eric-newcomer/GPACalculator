@@ -36,6 +36,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Button x:Name="ClearAll" Content="{DynamicResource Refresh}" Background="Transparent" Width="Auto" Margin="30 10 80 10" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Click="ClearAll_Click"/>
         <Label x:Name="Title" Content="College GPA Calculator"  VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="0" FontSize="30" FontWeight="Bold" Grid.ColumnSpan="5"/>
 
         <Label Content="Course Name" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"/>
@@ -107,7 +108,7 @@
         <TextBox x:Name="Class3Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="4" FontSize="20" VerticalAlignment="Center"/>
         <TextBox x:Name="Class4Credits" Margin="10 20 15 20" Grid.Column="2" Grid.Row="5" FontSize="20" VerticalAlignment="Center"/>
 
-        <Button x:Name="CalculateGPA" Content="Calculate GPA!" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" FontSize="20" FontWeight="Bold" Margin="50 10 150 10" Click="CalculateGPA_Click"/>
+        <Button x:Name="CalculateGPA" Background="#003831" Content="Calculate GPA!" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="6" FontSize="20" FontWeight="Bold" Margin="50 10 150 10" Click="CalculateGPA_Click"/>
         <Label x:Name="YourGPA" Content="Your GPA:" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="6" Margin="5 15 140 15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <TextBox x:Name="FinalGPA" Grid.Column="2" Grid.Row="6" Margin="10 20 15 20" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"/>
 
